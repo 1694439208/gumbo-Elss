@@ -72,8 +72,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\海绵宝宝\Desktop\测试;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\海绵宝宝\Desktop\测试;$(LibraryPath)</LibraryPath>
+    <IncludePath>D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
