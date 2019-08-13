@@ -20,8 +20,68 @@
     <ClInclude Include="sds.h">
       <Filter>源文件</Filter>
     </ClInclude>
+    <ClInclude Include="Tools.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\gumbo.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\attribute.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\char_ref.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\error.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\insertion_mode.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\parser.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\string_buffer.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\string_piece.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
     <ClInclude Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\strings.h">
       <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\tag_enum.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\tag_gperf.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\tag_sizes.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\tag_strings.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\token_type.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\tokenizer.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\tokenizer_states.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\utf8.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\util.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\vector.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="utf8_strings.h">
+      <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -32,6 +92,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="sds.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\jsoncpp.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\attribute.c">
@@ -67,5 +130,19 @@
     <ClCompile Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\vector.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="utf8_strings.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Source.def">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\char_ref.rl">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\tag.in">
+      <Filter>源文件</Filter>
+    </None>
   </ItemGroup>
 </Project>

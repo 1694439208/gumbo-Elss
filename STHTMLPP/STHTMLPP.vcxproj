@@ -31,13 +31,16 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v141_xp</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -46,11 +49,12 @@
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v141_xp</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -72,19 +76,23 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src;$(LibraryPath)</LibraryPath>
+    <IncludePath>D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src;C:\Users\海绵宝宝\source\repos\libicon\Release;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\海绵宝宝\source\repos\libicon\Release;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src;D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\visualc\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\海绵宝宝\source\repos\ATLProject1\Debug;C:\Users\海绵宝宝\source\repos\libicon\Release;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\海绵宝宝\source\repos\ATLProject1\Debug;C:\Users\海绵宝宝\source\repos\libiconv-1.15-3-vc15-x86\lib;C:\Users\海绵宝宝\source\repos\libicon\Release;$(LibraryPath)</LibraryPath>
+    <TargetName>HtmlAgilityPack</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <TargetName>HtmlAgilityPack</TargetName>
+    <IncludePath>D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src;D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\visualc\include;C:\Users\海绵宝宝\source\repos\libicon\Release;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src;C:\Users\海绵宝宝\source\repos\libiconv-1.15-3-vc15-x86\lib;C:\Users\海绵宝宝\source\repos\libicon\Release;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -93,11 +101,16 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ConformanceMode>true</ConformanceMode>
+      <ConformanceMode>false</ConformanceMode>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -118,23 +131,26 @@
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
-      <Optimization>MaxSpeed</Optimization>
+      <Optimization>Disabled</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ConformanceMode>true</ConformanceMode>
+      <ConformanceMode>false</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>Source.def</ModuleDefinitionFile>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -151,15 +167,36 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\attribute.h" />
+    <ClInclude Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\char_ref.h" />
+    <ClInclude Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\error.h" />
+    <ClInclude Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\gumbo.h" />
+    <ClInclude Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\insertion_mode.h" />
+    <ClInclude Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\parser.h" />
     <ClInclude Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\strings.h" />
+    <ClInclude Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\string_buffer.h" />
+    <ClInclude Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\string_piece.h" />
+    <ClInclude Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\tag_enum.h" />
+    <ClInclude Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\tag_gperf.h" />
+    <ClInclude Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\tag_sizes.h" />
+    <ClInclude Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\tag_strings.h" />
+    <ClInclude Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\tokenizer.h" />
+    <ClInclude Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\tokenizer_states.h" />
+    <ClInclude Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\token_type.h" />
+    <ClInclude Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\utf8.h" />
+    <ClInclude Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\util.h" />
+    <ClInclude Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\vector.h" />
     <ClInclude Include="sds.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="Tools.h" />
+    <ClInclude Include="utf8_strings.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\attribute.c" />
     <ClCompile Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\char_ref.c" />
     <ClCompile Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\error.c" />
+    <ClCompile Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\jsoncpp.cpp" />
     <ClCompile Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\parser.c" />
     <ClCompile Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\string_buffer.c" />
     <ClCompile Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\string_piece.c" />
@@ -176,6 +213,12 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="STHTMLPP.cpp" />
+    <ClCompile Include="utf8_strings.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\char_ref.rl" />
+    <None Include="D:\用户目录\下载\htmlgumbo-parser-master\gumbo-parser-master\src\tag.in" />
+    <None Include="Source.def" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

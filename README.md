@@ -1,4 +1,4 @@
-# gumbo-Elss
+# gumbo-querySelector
 html选择器elss 
 
 ![image](https://github.com/1694439208/gumbo-querySelector/blob/master/img/123.PNG)
